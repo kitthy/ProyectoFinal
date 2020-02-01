@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script src="validacion.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" class="form">
+            <img src="kisspng-logo-swimming-lessons-school-5afb1eea730c43.png" alt="Imagen no disponible" width="200" height="200">
+            <div class="form-header">
+                <h1 class="form-title">I<span>nscripciones</span></h1>
+                <h2 class="form-title">E<span>studiantes</span></h2>
+            </div>
+            <p>Lista de Estudiantes</p>
+            <div id="contacts"></div>
+            <br>
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombres" class="form-input" placeholder="Escriba el Nombre" required name="nombre">
+            <br>
+            <label for="apellidoP" class="form-label">Apellido:</label>
+            <input type="text" id="apellido" class="form-input" placeholder="Escriba el Apellido" required name="apellido">
+            <br>
+            <label for="edad" class="form-label">Edad:</label>
+            <input type="number" id="age" class="form-input" placeholder="Escriba la Edad" min="5" max="100" required name="edad">
+            <br>
+            <label for="carnet" class="form-label">Carnet de Identidad:</label>
+            <input type="number" id="ci" class="form-input" placeholder="Carnet de Identidad" min="0" required name="ci">
+            <br>
+            <label for="nivel" class="form-label">Nivel:</label>
+            <input type="text" id="nivel" class="form-input" placeholder="Escriba el Nivel" required name="nivel">
+            <br>
+            <label for="curso" class="form-label">Clase:</label>
+            <input type="text" id="clase" class="form-input" placeholder="Escriba el Curso" required name="clase">
+            <br>
+            <button onclick="validar();">Enviar Datos</button>
+            <p><button onclick="emptyList();">Empty</button> 
+                <button onclick="cm.save();">Guardar</button> 
+              <button onclick="loadList();">Load</button>
+              <!--  <button onclick="borrar();">Eliminar</button> --> 
+               </p>
+        </form>
+    </div>
+</body>
+</html>

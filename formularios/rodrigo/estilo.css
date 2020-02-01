@@ -1,0 +1,85 @@
+body{
+    background-image: url("blockchain.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: aqua;
+    text-align: center;
+}
+
+.contenedor .form .form-header .form-title span{
+    color: white;
+}
+
+.contenedor .form{
+    background: rgba(0, 0, 0, .6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+.form-label{
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+}
+
+.form-input{
+    display: block;
+    margin-right: 70px;
+    width: 150px;
+}
+
+.form-input:invalid{
+    background-color: rgba(0, 255, 255, 0.774);
+}
+.form-input:valid{
+    background-color: rgba(0, 134, 139, 0.795);
+}
+
+
+p {
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+}
+
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  table, tr, td {
+    border: 1px solid;
+    color: white;
+  } 
+
+  .contenedor .form .form-input {
+      background-color: rgba(rgb(0, 26, 255), rgb(0, 2, 128), blue, .7);
+      border: none;
+      outline: none;
+      border-bottom: 2px solid red;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      color: black;
+      font-family: roboto;
+  }
+
+  ::placeholder{
+      color: rgba(0, 0, 0, 0.897);
+  }

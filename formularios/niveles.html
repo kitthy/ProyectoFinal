@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moreira</title>
+    <link rel="stylesheet" type="text/css" href="niveles.css" media="screen">
+    <script src="niveles.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="cabecera">
+            <div class="logo">
+                <img src="logo2.png" width="150" alt="Logo de la empresa">
+
+            </div>
+            <div class="titulo">
+                <h1>Escuela de natación "Moreira"</h1>
+            </div>
+        </div>
+        <section class="main">
+            <div id="tabla1">
+                <form id="form1" onsubmit="return formSubmitted();">
+                    <h2>Registro de Niveles</h2>
+                    <table id="datos">
+                        <tr><td>Codigo:</td><td><input type="text" id="codigo" required></td><td></td></tr>
+                        
+                        <tr><td><label>Nombre del Nivel:</label></td><td>
+                            <select id="nombre" required>
+                                <option></option>
+                                <option value="crol">Crol</option>
+                                <option value="braza">Braza</option>
+                                <option value="mariposa">Mariposa</option>
+                                <option value="espalda">Espalda</option>
+                            </select>
+                        </td><td></td></tr>
+                        <tr><td><label>Elija un Carril:</label></td><td>
+                            <select id="carril" required>
+                                <option></option>
+                                <option value="carril1">Carril 1</option>
+                                <option value="carril2">Carril 2</option>
+                                <option value="carril3">Carril 3</option>
+                            </select required>
+                        </td><td></td></tr>
+                        <tr><td><label>Turno:</label></td><td>
+                            <input type="radio" name="turno" value="mañana">Mañana
+                            <input type="radio" name="turno" value="tarde">Tarde
+                        </td><td></td></tr>
+                        <tr><td><label>Instructor:</label></td><td>
+                            <select id="instructor" required>
+                                <option></option>
+                                <option value="Martin Fuentes">Martin Fuentes</option>
+                                <option value="Mercedes Gamboa">Mercedes Gamboa</option>
+                                <option value="Bertha Aguilar">Bertha Aguilar</option>
+                                <option value="Carlos Suarez">Carlos Suarez</option>
+                            </select>
+                        </td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td><br><input type="submit" name="guardar" value="Guardar Nivel"></td>
+                            <td><br><input type="button" name="modificar" value="Modificar Nivel" onclick="modificarNivel()"> </td>
+                            <td><br><input type="button" name="eliminar" value="Eliminar Nivel" onclick="eliminarNivel()"></td></tr>
+                    </table><br>
+                </form>
+            </div> <br>
+            <div id="contenido">
+            </div>
+            <br><br>
+        </section>
+        
+        <footer class="pie">
+            <h4>Desarrollado por la empresa Energy Soft <br> Contactos al cel: 7754852 <br> Derechos reservados, protegidos por ley</h4>
+        </footer>
+    </div>
+</body>
+</html>

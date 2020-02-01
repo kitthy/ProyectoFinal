@@ -1,0 +1,36 @@
+html {
+  font-family: sans-serif;
+  background: url(../imagenes/ima2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: black;
+}
+table {
+  margin-top: 20px;
+}
+table, tr, td {
+  border: 1px solid;
+} 
+.comentario {
+  width: 400px;
+  height: 200px;
+}
+
+.myForm input:invalid {
+  background-color: lightcoral;
+}
+.myForm input:valid {
+  background-color: lightgreen;
+}
+.myForm input:required {
+  border: 2px solid rgb(173, 56, 124);
+}
+.myForm input:optional {
+  border: 3px solid yellow;
+}
+.myForm label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}

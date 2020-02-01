@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moreira</title>
+    <link rel="stylesheet" type="text/css" href="inventario.css" media="screen">
+    <script src="inventario.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="cabecera">
+            <div class="logo">
+                <img src="logo2.png" width="150" alt="Logo de la empresa">
+
+            </div>
+            <div class="titulo">
+                <h1>Escuela de natación "Moreira"</h1>
+            </div>
+        </div>
+        <section class="main">
+            <div id="tabla1">
+                <form id="form1" onsubmit="return formSubmitted();">
+                    <h2>Registro de inventario</h2>
+                    <table id="datos">
+                        <tr><td><label>Codigo:</label></td><td><input type="text" id="codigo" required></td><td></td></tr>
+                        <tr><td><label>Nombre del Producto:</label></td><td><input type="text" id="nombre" required></td><td></td></tr>
+                        <tr><td><label>Costo Unitario:</label></td><td><input type="text" id="costo" required></td><td></td></tr>
+                        <tr><td><label>Cantidad:</label></td><td><input type="text" id="cantidad" required></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td><input type="submit" name="guardar" value="Guardar Equipo"></td>
+                            <td><input type="button" name="modificar" value="Modificar Equipo" onclick="modificarEquipo()"> </td>
+                            <td><input type="button" name="eliminar" value="Eliminar Equipo" onclick=" eliminarEquipo()"></td></tr>
+                    </table><br>
+                </form>
+            </div> <br>
+            <div id="contenido">
+            </div>
+            <br><br>
+        </section>
+        
+        <footer class="pie">
+            <h4>Desarrollado por la empresa Energy Soft <br> Contactos al cel: 7754852 <br> Derechos reservados, protegidos por ley</h4>
+        </footer>
+    </div>
+</body>
+</html>

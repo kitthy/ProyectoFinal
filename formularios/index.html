@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacion.js"></script>
+</head>
+
+<body>
+    <h1>Formulario de Contrato </h1>
+    <form class="myForm" onsubmit="return formSubmitted();">
+        <fieldset>
+            <legend>Proceda a ingresar los Datos del Instructor</legend>
+            <label>Ingrese su nombre completo:</label>
+            <input type="text" name="nombre" pattern="[A-Za-z].{2,20}" required id="nombre">
+            <br><br>
+            <label>Ingrese su correo electronico:</label>
+            <input type="email" name="direccionemail" placeholder="ejemplo@mail.com" required id="email">
+            <br><br>
+            <label>Ingrese su numero de telefono:</label><input type="tel" name="telefono" placeholder="Número"
+                id="fono" required>
+            <br><br>
+            <label>Ingrese su CI:</label><input type="number" name="ci" id="ci" required>
+            <br><br>
+            <label>Edad:</label><input type="number" name="edad" id="edad" required>
+            <br><br>
+            <label>Curriculum</label><br><br><textarea class="comentario" name="adicional"></textarea>
+            <br><br>
+            <button>Registrar</button>
+        </fieldset>
+    </form>
+    <h2>Lista de Instructores</h2>
+    <div id="contacts"></div>
+
+</body>
+
+</html>
